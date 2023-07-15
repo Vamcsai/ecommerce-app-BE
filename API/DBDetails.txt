@@ -1,0 +1,18 @@
+Details -
+database: ecommerce-app
+username: crjaysel6z19h1jdagx1
+host: aws.connect.psdb.cloud
+password: pscale_pw_152livSFE8cyGya1bJpab22bMkQLRBubQC8K2QfX8wi
+
+
+
+NodeJs - 
+const mysql = require('mysql2')
+const connection = mysql.createConnection('mysql://crjaysel6z19h1jdagx1:pscale_pw_152livSFE8cyGya1bJpab22bMkQLRBubQC8K2QfX8wi@aws.connect.psdb.cloud/ecommerce-app?ssl={"rejectUnauthorized":true}')
+
+
+Java - 
+Class.forName("com.mysql.cj.jdbc.Driver");
+Connection conn = DriverManager.getConnection(
+  "jdbc:mysql://aws.connect.psdb.cloud/ecommerce-app?sslMode=VERIFY_IDENTITY",
+  "crjaysel6z19h1jdagx1", "pscale_pw_152livSFE8cyGya1bJpab22bMkQLRBubQC8K2QfX8wi");
